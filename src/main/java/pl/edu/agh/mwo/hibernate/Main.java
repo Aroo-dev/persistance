@@ -45,6 +45,11 @@ public class Main {
                     StringBuilder queryBuilder = new StringBuilder();
 
                     while ((line = reader.readLine()) != null) {
+
+                        if (line.startsWith("--")) {
+                            continue;
+                        }
+
                         queryBuilder.append(line);
 
                         if (line.endsWith(";")) {

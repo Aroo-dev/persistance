@@ -9,7 +9,7 @@
         <class>pl.edu.agh.mwo.hibernate.Photo</class>
         <!-- Dodaj inne klasy encji, jeśli istnieją -->
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLiteDialect"/>
+            <property name="hibernate.dialect" value="org.sqlite.hibernate.dialect.SQLiteDialect"/>
             <property name="hibernate.connection.driver_class" value="org.sqlite.JDBC"/>
             <property name="hibernate.connection.url" value="jdbc:sqlite:database.db"/>
             <property name="hibernate.show_sql" value="true"/>
